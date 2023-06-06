@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script src="https://unpkg.com/ml5@latest/dist/ml5.min.js" type="text/javascript">
+    </script> 
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css" > 
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"> 
+    </script> 
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"> 
+    </script>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Ysabeau:ital,wght@1,300&display=swap" rel="stylesheet">
+    <script src="main.js"></script>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <header>
+       <div class="col-xs-12">
+            <h2 class="text-center">Reconheçedor de sons</h2>
+            <p class="text-center">notas: reproduza diferentes sons </p>
+            <br>
+            <br>
+       </div>     
+    </header>
+    <main>
+        <center>
+        <div>
+            <button onclick="startClassification()" class="btn btn-warning">
+                iniciar
+            </button>
+            <h4 id = "gato" class="text-center">
+                Som de gato 0 - Som cachorro 0
+            </h4>
+            <h3 id="decta" class="text-center">
+                Som detectado - ruído
+            </h3>
+            <br>
+            <img src="ruido.png" alt="" id="giiif">
+        </div>
+        </center>
+    </main>
+    <footer>
+        <div class = "copy_right_footer">
+
+        </div>
+    </footer>
+</body>
+</html>
